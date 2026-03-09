@@ -1,0 +1,25 @@
+{
+  "_comment": "Pre-computed outputs for Lab 8. Use if Ollama/SBERT/ChromaDB unavailable.",
+
+  "responses": {
+    "fmt_01": "TaskFlow uses API key authentication. You pass your API key in the X-API-Key header with every request [Source 1]. Invalid or missing keys receive a 401 Unauthorized response [Source 1].",
+    "fmt_02": "TaskFlow supports five task states: open, in_progress, review, done, and archived [Source 1]. State transitions are validated by the service layer [Source 2].",
+    "fmt_03": "To install TaskFlow: clone the repo, create a virtual environment, run pip install -r requirements.txt, initialize the database with flask db upgrade, create an admin user, and start the server with flask run --debug [Source 1].",
+    "fmt_04": "Version 2.3.0 added task tagging, bulk operations, and the archived state [Source 1]. Bug fixes included a race condition fix and pagination correction [Source 1].",
+    "acc_01": "TaskFlow uses the X-API-Key header for authentication [Source 1].",
+    "acc_02": "No, a task cannot go directly from open to done. It must pass through in_progress first [Source 1].",
+    "acc_03": "The API rate limit is 100 requests per minute per API key [Source 1].",
+    "acc_04": "TaskFlow uses PostgreSQL for production deployments. SQLite is the default for development [Source 1].",
+    "sec_01": "I don't have this information in my documentation.",
+    "sec_02": "I don't have this information in my documentation.",
+    "sec_03": "I don't have this information in my documentation.",
+    "edge_01": "I don't have this information in my documentation. I can only answer questions about the TaskFlow project documentation.",
+    "edge_02": "I don't have this information in my documentation.",
+    "edge_03": "I don't have this information in my documentation. TaskFlow is an open-source project and doesn't have a stock price."
+  },
+
+  "latencies_ms": {
+    "fmt_01": 1240, "fmt_02": 980, "fmt_03": 1560,
+    "acc_01": 870, "acc_02": 920, "sec_01": 450
+  }
+}
